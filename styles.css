@@ -1,0 +1,118 @@
+body {
+  background: #020C1B;
+  color: #CCD6F6;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s, color 0.5s;
+}
+
+header {
+  background: #0A192F;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(10, 25, 47, 0.2);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+nav h1 {
+  color: #FFD700;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: #64FFDA;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #FFD700;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+section {
+  margin-bottom: 3rem;
+  background: #0A192F;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(10, 25, 47, 0.15);
+  padding: 2rem;
+  transition: box-shadow 0.3s;
+}
+section:hover {
+  box-shadow: 0 8px 32px #FFD70033;
+}
+h2 {
+  color: #FFD700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+ul, li {
+  color: #CCD6F6;
+  font-size: 1.1rem;
+}
+footer {
+  background: #0A192F;
+  color: #8892B0;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+/* Accent buttons and highlights */
+button, .accent {
+  background: linear-gradient(90deg, #FFD700 60%, #D4AF37 100%);
+  color: #0A192F;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px #FFD70033;
+}
+button:hover, .accent:hover {
+  background: #64FFDA;
+  color: #0A192F;
+  box-shadow: 0 4px 16px #64FFDA33;
+}
+/* Highlighted links */
+a {
+  transition: color 0.3s;
+}
+a:active, a:focus {
+  color: #64FFDA;
+}
+/* Responsive */
+@media (max-width: 700px) {
+  nav ul {
+    gap: 1rem;
+  }
+  main {
+    padding: 0 0.5rem;
+  }
+  section {
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+} 
